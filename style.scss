@@ -1,0 +1,43 @@
+@import 'animations';
+$dark-blue: #65C7F7; 
+$light-blue:#9CECFB;
+
+.card{
+    box-shadow: 6px 6px 12px  #2020234d;
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .submit-btn{
+        background: rgb(0, 82, 214);
+        
+        color: white;
+        transition: background .5s ease-out;
+        &:hover{
+            color: white;
+            background: rgb(0, 58, 151);
+        }
+    }
+}
+
+#loading, #results{
+    display: none;
+}
+body{
+    background: $dark-blue;
+}
+
+.alert-danger{
+    animation:  swing .6s  ;
+}
+
+#results{
+    animation:  bounceIn .6s  ;
+}
+
+
+
+  
